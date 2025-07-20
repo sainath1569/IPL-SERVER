@@ -1,6 +1,4 @@
-import { base } from 'framer-motion/client';
 import mongoose from 'mongoose';
-import { TbStatusChange } from 'react-icons/tb';
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
