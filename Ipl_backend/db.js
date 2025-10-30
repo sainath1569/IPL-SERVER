@@ -92,8 +92,8 @@ const auctionSchema = new mongoose.Schema({
   budgetperteam: {
     type: Number,
     required: true,
-    min: 5000,
-    max: 20000,
+    min: 50,
+    max: 200,
     default: 10000
   },
   entryfees: {
