@@ -105,7 +105,7 @@ UserRouter.post('/forgot-password', async (req, res) => {
             subject: 'IPL Mock Auction - Password Reset',
             html: `
                 <p>You requested a password reset for your IPL Mock Auction account.</p>
-                <p>Click <a href="http://localhost:3000/reset-password/${resetToken}">here</a> to reset your password.</p>
+                <p>Click <a href="https://ipl-server-mj6l.onrender.com/reset-password/${resetToken}">here</a> to reset your password.</p>
                 <p>This link will expire in 15 minutes.</p>
                 <p>If you didn't request this, please ignore this email.</p>
             `
