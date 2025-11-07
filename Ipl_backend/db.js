@@ -12,7 +12,6 @@ const playerSchema = new mongoose.Schema({
     playerId: {
     type: Number,   
     required: true, 
-    unique: true
     },
   name: {
     type: String,
@@ -114,7 +113,6 @@ const auctionSchema = new mongoose.Schema({
      playerId: {
     type: Number,
     required: true,
-    unique: true,
     index: true,
   },
     base: {
@@ -137,8 +135,7 @@ const auctionSchema = new mongoose.Schema({
     teamname: {
       type: String,
       trim: true,
-      default: '',
-      required: true,
+      default: null,
     },
     email: {
       type: String,
