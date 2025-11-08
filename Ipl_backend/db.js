@@ -175,8 +175,7 @@ const requestSchema = new mongoose.Schema({
   },
   email:{
     type:String,
-    required: true,
-    unique: true
+    required: true
   },
   teamlogo: {
     data: { type: Buffer, required: false },
