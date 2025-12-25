@@ -496,7 +496,7 @@ AuctionLiveRouter.get('/franchise/:teamName', async (req, res) => {
     const totalSpent = teamPlayers.reduce((sum, player) => sum + (player.soldprice || 0), 0);
     
     // Calculate remaining purse
-    const remainingPurse = auction.budgetperteam - totalSpent;
+    const remainingPurse = (auction.budgetperteam *100) - totalSpent;
 
     // If no players found, return empty response
     if (teamPlayers.length === 0) {
