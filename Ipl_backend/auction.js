@@ -37,7 +37,7 @@ Auctionrouter.get('/getplayers', async (req, res) => {
       if (maxPrice) filter.soldprice.$lte = Number(maxPrice);
     }
 
-    const players = await Player.find(filter).sort({ soldprice: -1 }).limit(250);
+    const players = await Player.find(filter).sort({ soldprice: -1 }).limit(270);
     res.status(200).json(players);
   } catch (e) {
     console.error("Get Players Error:", e);
